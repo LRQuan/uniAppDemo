@@ -1,0 +1,52 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/goods/goodsList",
+			"style": {
+				"navigationBarTitleText": "点餐"
+			}
+		},
+		{
+            "path" : "pages/orders/orderList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+            "path" : "pages/user/userCenter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户中心",
+                "enablePullDownRefresh": false
+            }
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#333",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [{
+				"pagePath": "pages/goods/goodsList",
+				"text": "点餐"
+			},
+			{
+				"pagePath": "pages/orders/orderList",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/user/userCenter",
+				"text": "我"
+			}
+		]
+	}
+}
